@@ -1,0 +1,23 @@
+#N canvas 560 207 450 300 12;
+#X floatatom 320 135 5 0 0 0 - - -;
+#X obj 321 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 320 84 random 100;
+#X floatatom 111 45 5 0 0 0 - - -;
+#X obj 136 110 expr ($f1*$f2);
+#X floatatom 139 144 5 0 0 0 - - -;
+#X obj 224 63 random 100;
+#X msg 196 14 1;
+#X msg 253 13 0;
+#X floatatom 252 108 5 0 0 0 - - -;
+#X obj 178 53 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 1;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 10 0 6 0;
