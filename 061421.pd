@@ -1,0 +1,11 @@
+#N canvas 640 205 450 300 12;
+#X obj 121 78 adc~;
+#X obj 121 209 writesf~ 2;
+#X msg 217 93 start;
+#X msg 226 127 stop;
+#X msg 207 62 open 1.wav;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
